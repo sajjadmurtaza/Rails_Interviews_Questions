@@ -1,14 +1,7 @@
 # Rails Interview Questions
 
-I get a fair number of questions via [Hacker Hours](http://hackerhours.org) and elsewhere regarding what questions to use/expect in an interview for a Rails developer, so figured I would get it together in a tidy list.  Pull requests welcome.
+[Hacker Hours](http://hackerhours.org)
 
-## Tips
-
-### Interviewers
-
-* Personalize your list of questions.
-* Don't ask questions you don't know the answers to.
-* Mix trivia questions with open-ended ones.
 
 ### Interviewees
 
@@ -62,7 +55,7 @@ I get a fair number of questions via [Hacker Hours](http://hackerhours.org) and 
 [1](http://guides.rubyonrails.org/asset_pipeline.html) -- [2](http://coderberry.me/blog/2012/04/24/asset-pipeline-for-dummies/) -- [3*](http://stackoverflow.com/questions/14719788/how-can-i-determine-the-md5-digest-of-a-given-asset-in-the-rails-asset-pipeline)  
 
 #####  Include and join ?  
-[include(EAGER LOADING) -- join(LAZY LOADING)]  
+[include(EAGER LOADING) -- join(LAZY LOADING)](#)  
 [1](http://tomdallimore.com/blog/includes-vs-joins-in-rails-when-and-where/) -- [2](http://blog.bigbinary.com/2013/07/01/preload-vs-eager-load-vs-joins-vs-includes.html)  --  [3](http://railscasts.com/episodes/181-include-vs-joins)  
 
 #####  Proc and lambda?  
@@ -85,23 +78,23 @@ you want "test" method only for obje3
 obj3.extend Abc  
 obj3.test  
 [answer](http://saturnflyer.com/blog/jim/2011/09/28/4-simple-steps-extending-ruby-objects-the-tip-of-the-iceberg-with-dci/)  
-[1](https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems)  --[2](http://www.railstips.org/blog/archives/2009/05/15/include-vs-extend-in-ruby/)  
+[1](https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems)  --  [2](http://www.railstips.org/blog/archives/2009/05/15/include-vs-extend-in-ruby/)  
 
 #####  CarrierWave vs. Paperclip vs. Dragonfly comparison  
 [1](http://bcjordan.com/posts/rails-image-uploading-framework-comparison/) -- [carrierwave is more flexible, complex image processing](http://praaveenvr.blogspot.fr/2014/03/compare-carrierwave-paperclip-and.html)  
 
 ##### Observer  
-* Observer are not in rails 4
+* Observer are not in rails 4  
 [1*](http://codebrahma.com/ruby/2014/07/30/observers-in-rails.html) -- [2](http://samuelmullen.com/2013/05/the-problem-with-rails-callbacks/) -- [3](http://stackoverflow.com/questions/15165260/rails-observer-alternatives-for-4-0)  -- [4](http://ablogaboutcode.com/2011/10/24/using-rails-observers-to-write-faster-tests-and-simpler-models/)  
 
 ##### rails before_action and before_filter
 [1*](http://stackoverflow.com/questions/16519828/rails-4-before-filter-vs-before-action) -- [2](http://stackoverflow.com/questions/20811029/difference-between-actions-and-filters-in-rails) -- [3](https://twitter.com/rails/status/277121523649740800)  
 
 ##### class vs module
-[1](http://stackoverflow.com/questions/151505/difference-between-a-class-and-a-module) 
+[1](http://stackoverflow.com/questions/151505/difference-between-a-class-and-a-module) -- [2](https://www.youtube.com/watch?v=taaIIYj1jFA&list=PL7A85FD7803A8CB1F&index=5)
 
-##### Try
-[1](http://apidock.com/rails/Object/try)
+##### Try / Dealing with Nil
+[1](http://apidock.com/rails/Object/try) -- [2](https://www.youtube.com/watch?v=v8d5UthX9gw&index=6&list=PL7A85FD7803A8CB1F) -- [3](http://pramodtech.quora.com/nil-empty-blank-present-in-Ruby-on-Rails)
 
 ##### Save Something after_save callback
 [1](http://stackoverflow.com/questions/5777172/rails-how-to-update-a-column-after-saving) -- [If you have to change any value, always try before_save](http://stackoverflow.com/questions/12835029/how-does-after-save-work-when-saving-an-object)
@@ -113,6 +106,40 @@ obj3.test
 [1](http://www.jvanbaarsen.com/blog/2014/07/01/ruby-on-rails-dup-vs-clone) -- [2](https://coderwall.com/p/1zflyg/ruby-the-differences-between-dup-clone) -- [3*](http://sachinchoudhary.blogspot.com/2014/01/ruby-clone-dup-vs-rails-deepdup.html)
 
 #####  SQLite vs MySQL vs PostgreSQL: A Comparison Of Relational Database Management Systems  
+
+
+------------ 
+
+##### helper & helper_method
+[1](http://stackoverflow.com/questions/3992659/in-rails-what-exactly-do-helper-and-helper-method-do)
+
+##### Background jobs
+[1](http://railscasts.com/episodes/271-resque?view=asciicast) -- [2](http://railscasts.com/episodes/366-sidekiq) -- [3](http://railscasts.com/episodes/171-delayed-job)
+
+##### ElasticSearch
+[1**](http://www.sitepoint.com/full-text-search-rails-elasticsearch/) -- [2](http://www.codinginthecrease.com/news_article/show/409843?referrer_id=948927) -- [3*](http://aaronvb.com/articles/intro-to-elasticsearch-ruby-on-rails-part-1.html) -- [4](http://stackoverflow.com/questions/25258121/elasticsearch-rails-setting-a-custom-analyzer) -- [5](http://stackoverflow.com/questions/12409438/when-do-you-start-additional-elasticsearch-nodes/12414123#12414123) -- [6](https://www.elastic.co/guide/en/elasticsearch/client/ruby-api/current/index.html)
+
+#### Session & Cookies
+[1](http://www.theodinproject.com/ruby-on-rails/sessions-cookies-and-authentication) -- [2](http://railscasts.com/episodes/270-authentication-in-rails-3-1) -- [3](http://railscasts.com/episodes/250-authentication-from-scratch?autoplay=true) -- [4](http://pothibo.com/2013/09/sessions-and-cookies-in-ruby-on-rails/) -- [5](http://www.justinweiss.com/blog/2015/03/17/how-rails-sessions-work/)
+
+#### Gemfile and Gemfile.lock
+[1](http://stackoverflow.com/questions/6927442/what-is-the-difference-between-gemfile-and-gemfile-lock-in-ruby-on-rails) -- [2](https://www.youtube.com/watch?v=ZE-8rqPI3B4&list=PL7A85FD7803A8CB1F&index=9) -- [3](http://stackoverflow.com/questions/6588674/what-does-bundle-exec-rake-mean)
+
+#### Delegate
+[1](http://pivotallabs.com/rails-delegates-are-even-more-useful-than-i-knew/) -- [2](http://wyeworks.com/blog/2009/6/4/rails-delegate-method) -- [3](http://apidock.com/rails/Module/delegate)
+
+#### Object Relational Mapping(ORM)
+[1](http://guides.rubyonrails.org/active_record_basics.html) -- [2](http://stackoverflow.com/questions/2194915/what-is-orm-as-related-to-ruby-on-rails)
+
+#### Layout + rails render and redirect
+[1](http://railscasts.com/episodes/8-layouts-and-content-for) -- [2](http://brettu.com/rails-daily-ruby-tip-28-whats-the-difference-between-redirect_to-and-render-in-rails/)
+
+------------ 
+#### & symbol in map
+[1](http://stackoverflow.com/questions/9468564/what-does-post-all-mapid-mean) -- [2](http://stackoverflow.com/questions/12084507/what-does-the-map-method-do-in-ruby) -- [3](http://apidock.com/ruby/Enumerable/map)
+
+#### Active Record: Preventing SQL Injection Attacks
+[1](http://guides.rubyonrails.org/security.html#sql-injection) -- [2](https://blog.8thlight.com/adam-gooch/2013/01/04/protect-yourself-from-sql-injection.html) -- [3](https://blog.8thlight.com/adam-gooch/2013/01/04/protect-yourself-from-sql-injection.html) -- [4](http://rails-sqli.org/) -- [5](http://stackoverflow.com/questions/1582511/rails-active-record-nuances-and-protecting-against-injection-attacks)
 
 ------------ 
 [Rails Hot Topic](http://techspry.com/ruby_and_rails)
