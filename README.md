@@ -141,9 +141,18 @@ obj3.test
 #### Active Record: Preventing SQL Injection Attacks
 [1](http://guides.rubyonrails.org/security.html#sql-injection) -- [2](https://blog.8thlight.com/adam-gooch/2013/01/04/protect-yourself-from-sql-injection.html) -- [3](https://blog.8thlight.com/adam-gooch/2013/01/04/protect-yourself-from-sql-injection.html) -- [4](http://rails-sqli.org/) -- [5](http://stackoverflow.com/questions/1582511/rails-active-record-nuances-and-protecting-against-injection-attacks)
 
+#### save and save!
+[1](http://stackoverflow.com/questions/5056385/when-to-use-save-vs-save-in-model) -- [2](http://stackoverflow.com/questions/5270881/rails-3-difference-between-widget-save-and-widget-save)
 ------------ 
-[Rails Hot Topic](http://techspry.com/ruby_and_rails)
+#### Encapsulation
+[_1_](http://samurails.com/interview/ruby-inheritance-encapsulation-polymorphism/)
 
+#### send
+[_1_](http://stackoverflow.com/questions/7895253/rails-100-newb-issue-send-method)
+------------ 
+
+[Rails Hot Topic](http://techspry.com/ruby_and_rails) -- (http://www.skilledup.com/articles/ruby-on-rails-interview-questions-answers)
+[_*_Questions_](https://gist.github.com/ryansobol/5252653) == [_2_](http://www.careerride.com/ruby-on-rails-interview-questions.aspx)
 
 ------------  
 
