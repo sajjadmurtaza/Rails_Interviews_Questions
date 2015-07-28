@@ -149,9 +149,15 @@ obj3.test
 
 #### send
 [_1_](http://stackoverflow.com/questions/7895253/rails-100-newb-issue-send-method)
+
+#### serialize
+[_1_](http://ruby-journal.com/how-to-write-custom-serializer-for-activerecord-number-serialize/) -- [_2_](http://stackoverflow.com/questions/2959661/rails-serializing-objects-in-a-database)
+
+#### What is http
+[_1_](https://www.youtube.com/watch?v=kGOpY2J31pI&list=PL7A85FD7803A8CB1F&index=39) - [_2_](http://stackoverflow.com/questions/2441962/what-is-restful-routing)
 ------------ 
 
-[Rails Hot Topic](http://techspry.com/ruby_and_rails) -- (http://www.skilledup.com/articles/ruby-on-rails-interview-questions-answers)
+[Rails Hot Topic](http://techspry.com/ruby_and_rails) -- (http://www.skilledup.com/articles/ruby-on-rails-interview-questions-answers) -- [__@_](http://blog.reskill.me/ruby-on-rails-interview-questions-that-will-land-you-the-job/?utm_source=content&utm_medium=fb&utm_campaign=ruby_questions)
 [_*_Questions_](https://gist.github.com/ryansobol/5252653) == [_2_](http://www.careerride.com/ruby-on-rails-interview-questions.aspx)
 
 ------------  
