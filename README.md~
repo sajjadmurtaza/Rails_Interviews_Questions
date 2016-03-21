@@ -19,7 +19,7 @@
 * What is a tree?  What is a DAG?
 * Pseudo-code depth-first and breadth-first search.
 * Given a sorted array, what is the fastest way to find a element?  What is the Big-O time to do so?
-* Explain how ajax works, hitting all parts of the stack. ([@abestanway](https://twitter.com/abestanway/status/278967644705677312))
+* Explain how ajax works, hitting all parts of the stack.
 
 ### Ruby
 
@@ -47,28 +47,27 @@
 * What is middleware? How does it compare to controller filters/actions?
 * Explain various forms of caching available in Rails.
 * What are some Ruby web server options?
-* On a scale of [@gorbypuff](https://twitter.com/gorbypuff) (0) to [@tenderlove](https://twitter.com/tenderlove) (10), how would you rate your Rails proficiency? 
 
 ## Other Questions
 
 ##### Why we need Asset Pipeline in rails.?  
-[1](http://guides.rubyonrails.org/asset_pipeline.html) -- [2](http://coderberry.me/blog/2012/04/24/asset-pipeline-for-dummies/) -- [3*](http://stackoverflow.com/questions/14719788/how-can-i-determine-the-md5-digest-of-a-given-asset-in-the-rails-asset-pipeline)  
+[#1](http://guides.rubyonrails.org/asset_pipeline.html) -- [#2](http://coderberry.me/blog/2012/04/24/asset-pipeline-for-dummies/) -- [#3 *](http://stackoverflow.com/questions/14719788/how-can-i-determine-the-md5-digest-of-a-given-asset-in-the-rails-asset-pipeline)  
 
 #####  Include and join ?  
 [include(EAGER LOADING) -- join(LAZY LOADING)](#)  
-[1](http://tomdallimore.com/blog/includes-vs-joins-in-rails-when-and-where/) -- [2](http://blog.bigbinary.com/2013/07/01/preload-vs-eager-load-vs-joins-vs-includes.html)  --  [3](http://railscasts.com/episodes/181-include-vs-joins)  
+[#1](http://tomdallimore.com/blog/includes-vs-joins-in-rails-when-and-where/) -- [#2](http://blog.bigbinary.com/2013/07/01/preload-vs-eager-load-vs-joins-vs-includes.html)  --  [#3](http://railscasts.com/episodes/181-include-vs-joins)  
 
 #####  Proc and lambda?  
-[1](http://awaxman11.github.io/blog/2013/08/05/what-is-the-difference-between-a-block/) -- [2*](http://stackoverflow.com/questions/626/when-to-use-lambda-when-to-use-proc-new) -- [3](http://techspry.com/ruby_and_rails/proc-and-lambda-in-ruby/)  
+[#1](http://awaxman11.github.io/blog/2013/08/05/what-is-the-difference-between-a-block/) -- [#2 *](http://stackoverflow.com/questions/626/when-to-use-lambda-when-to-use-proc-new) -- [#3](http://techspry.com/ruby_and_rails/proc-and-lambda-in-ruby/)  
 
 #####  Inheritence Questions?  
-[1](http://stackoverflow.com/questions/9359948/multiple-inheritance-whats-a-good-example) -- [2](http://beginnersbook.com/2013/05/java-inheritance-types/) -- [3](http://www.dotnet-tricks.com/Tutorial/oops/JaIO211013-Understanding-Inheritance-and-Different-Types-of-Inheritance.html)
+[#1](http://stackoverflow.com/questions/9359948/multiple-inheritance-whats-a-good-example) -- [#2](http://beginnersbook.com/2013/05/java-inheritance-types/) -- [#3](http://www.dotnet-tricks.com/Tutorial/oops/JaIO211013-Understanding-Inheritance-and-Different-Types-of-Inheritance.html)
 
 #####  Multiple table inheritence.?  
-[1](http://techspry.com/ruby_and_rails/multiple-table-inheritance-in-rails-3/)
+[#1](http://techspry.com/ruby_and_rails/multiple-table-inheritance-in-rails-3/)
 
 #####  Multiple Inheritence in rails.  
-[1](http://www.nishantnigam.in/2012/01/simulating-multiple-inheritance-with.html) -- [2](http://stackoverflow.com/questions/1282864/ruby-inheritance-vs-mixins) -- [3**](http://tutorials.jumpstartlab.com/topics/models/modules.html) -- [In object-oriented programming languages, a mixin is a class that contains a combination of methods from other classes.](https://railskey.wordpress.com/2013/02/07/multiple-inheritance-ruby/)  
+[#1](http://www.nishantnigam.in/2012/01/simulating-multiple-inheritance-with.html) -- [#2](http://stackoverflow.com/questions/1282864/ruby-inheritance-vs-mixins) -- [#3 **](http://tutorials.jumpstartlab.com/topics/models/modules.html) -- [# In object-oriented programming languages, a mixin is a class that contains a combination of methods from other classes.](https://railskey.wordpress.com/2013/02/07/multiple-inheritance-ruby/)  
 
 #####  If you have 3 objects(Extend)  
 obj1  
@@ -77,21 +76,21 @@ obj3
 you want "test" method only for obje3  
 obj3.extend Abc  
 obj3.test  
-[answer](http://saturnflyer.com/blog/jim/2011/09/28/4-simple-steps-extending-ruby-objects-the-tip-of-the-iceberg-with-dci/)  
-[1](https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems)  --  [2](http://www.railstips.org/blog/archives/2009/05/15/include-vs-extend-in-ruby/)  
+[# answer](http://saturnflyer.com/blog/jim/2011/09/28/4-simple-steps-extending-ruby-objects-the-tip-of-the-iceberg-with-dci/)  
+[#1](https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems)  --  [#2](http://www.railstips.org/blog/archives/2009/05/15/include-vs-extend-in-ruby/)  
 
 #####  CarrierWave vs. Paperclip vs. Dragonfly comparison  
-[1](http://bcjordan.com/posts/rails-image-uploading-framework-comparison/) -- [carrierwave is more flexible, complex image processing](http://praaveenvr.blogspot.fr/2014/03/compare-carrierwave-paperclip-and.html)  
+[#1](http://bcjordan.com/posts/rails-image-uploading-framework-comparison/) -- [# carrierwave is more flexible, complex image processing](http://praaveenvr.blogspot.fr/2014/03/compare-carrierwave-paperclip-and.html)  
 
 ##### Observer  
 * Observer are not in rails 4  
-[1*](http://codebrahma.com/ruby/2014/07/30/observers-in-rails.html) -- [2](http://samuelmullen.com/2013/05/the-problem-with-rails-callbacks/) -- [3](http://stackoverflow.com/questions/15165260/rails-observer-alternatives-for-4-0)  -- [4](http://ablogaboutcode.com/2011/10/24/using-rails-observers-to-write-faster-tests-and-simpler-models/)  
+[#1 *](http://codebrahma.com/ruby/2014/07/30/observers-in-rails.html) -- [#2](http://samuelmullen.com/2013/05/the-problem-with-rails-callbacks/) -- [#3](http://stackoverflow.com/questions/15165260/rails-observer-alternatives-for-4-0)  -- [#4](http://ablogaboutcode.com/2011/10/24/using-rails-observers-to-write-faster-tests-and-simpler-models/)  
 
 ##### rails before_action and before_filter
-[1*](http://stackoverflow.com/questions/16519828/rails-4-before-filter-vs-before-action) -- [2](http://stackoverflow.com/questions/20811029/difference-between-actions-and-filters-in-rails) -- [3](https://twitter.com/rails/status/277121523649740800)  
+[#1 *](http://stackoverflow.com/questions/16519828/rails-4-before-filter-vs-before-action) -- [#2](http://stackoverflow.com/questions/20811029/difference-between-actions-and-filters-in-rails) -- [#3](https://twitter.com/rails/status/277121523649740800)  
 
 ##### class vs module
-[1](http://stackoverflow.com/questions/151505/difference-between-a-class-and-a-module) -- [2](https://www.youtube.com/watch?v=taaIIYj1jFA&list=PL7A85FD7803A8CB1F&index=5)
+[#1](http://stackoverflow.com/questions/151505/difference-between-a-class-and-a-module) -- [#2](https://www.youtube.com/watch?v=taaIIYj1jFA&list=PL7A85FD7803A8CB1F&index=5)
 
 ##### Try / Dealing with Nil
 [1](http://apidock.com/rails/Object/try) -- [2](https://www.youtube.com/watch?v=v8d5UthX9gw&index=6&list=PL7A85FD7803A8CB1F) -- [3](http://pramodtech.quora.com/nil-empty-blank-present-in-Ruby-on-Rails)
@@ -155,7 +154,17 @@ obj3.test
 
 #### What is http
 [_1_](https://www.youtube.com/watch?v=kGOpY2J31pI&list=PL7A85FD7803A8CB1F&index=39) - [_2_](http://stackoverflow.com/questions/2441962/what-is-restful-routing)
+
+#### What is rake
+[_1_](http://stackoverflow.com/questions/18737696/what-is-rake-and-how-it-is-used-in-rails) - [_2_](http://www.tutorialspoint.com/ruby-on-rails/rails-and-rake.htm) 
+
+#### What is rack
+[_‘Rack’ is basically specification of these two things: what the server should send to the app and what the app should return to the server. That’s it._](http://blog.gauravchande.com/what-is-rack-in-ruby-rails) - [_1_](https://www.amberbit.com/blog/2011/07/13/introduction-to-rack-middleware/) - [_2_](http://southdesign.de/blog/rack.html) - [_3_](https://www.amberbit.com/blog/2011/07/13/introduction-to-rack-middleware/) - [_4*_](https://blog.engineyard.com/2015/understanding-rack-apps-and-middleware) - [_5_](http://stackoverflow.com/questions/2256569/what-is-rack-middleware) - [_6_](http://rack.github.io/) - [_7_railscast](http://railscasts.com/episodes/151-rack-middleware?view=asciicast)
 ------------ 
+
+#### noSQL
+
+[_1_](http://www.zdnet.com/article/what-is-nosql-and-why-do-you-need-it/) - [_2*_](http://www.slideshare.net/Leesy/an-introduction-to-nosql-mongodb) - [_3_](http://www.slideshare.net/harrikauhanen/nosql-3376398) - [_4_v](https://www.youtube.com/watch?v=KSq6tMMXZ8s)
 
 [Rails Hot Topic](http://techspry.com/ruby_and_rails) -- (http://www.skilledup.com/articles/ruby-on-rails-interview-questions-answers) -- [__@_](http://blog.reskill.me/ruby-on-rails-interview-questions-that-will-land-you-the-job/?utm_source=content&utm_medium=fb&utm_campaign=ruby_questions)
 [_*_Questions_](https://gist.github.com/ryansobol/5252653) == [_2_](http://www.careerride.com/ruby-on-rails-interview-questions.aspx)
@@ -164,3 +173,6 @@ obj3.test
 
 ##### Search File
 * [locate filename](http://www.howtogeek.com/112674/how-to-find-files-and-folders-in-linux-using-the-command-line/)  
+
+##### ERB 2 SLIM
+* [_1_](http://stackoverflow.com/questions/10347572/convert-erb-template-to-slim)
