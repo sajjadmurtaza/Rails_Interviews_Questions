@@ -46,6 +46,8 @@
 * What is middleware? How does it compare to controller filters/actions?
 * Explain various forms of caching available in Rails.
 * What are some Ruby web server options?
+* [# 1](http://adamjonas.com/blog/interview-prep/)
+* [# 2](http://www.hub4tech.com/interview/ruby-on-rails)
 
 ## Other Questions
 
@@ -139,8 +141,6 @@ obj3.test
 ##### Active Record: Preventing SQL Injection Attacks
 [#Answer 1](http://guides.rubyonrails.org/security.html#sql-injection) -- [#Answer 2](https://blog.8thlight.com/adam-gooch/2013/01/04/protect-yourself-from-sql-injection.html) -- [#Answer 3](https://blog.8thlight.com/adam-gooch/2013/01/04/protect-yourself-from-sql-injection.html) -- [#Answer 4](http://rails-sqli.org/) -- [#Answer 5](http://stackoverflow.com/questions/1582511/rails-active-record-nuances-and-protecting-against-injection-attacks)
 
-##### save and save!.
-[#Answer 1](http://stackoverflow.com/questions/5056385/when-to-use-save-vs-save-in-model) -- [#Answer 2](http://stackoverflow.com/questions/5270881/rails-3-difference-between-widget-save-and-widget-save)
 ------------ 
 ##### Encapsulation
 [#Answer 1](http://samurails.com/interview/ruby-inheritance-encapsulation-polymorphism/)
@@ -158,7 +158,7 @@ obj3.test
 [#Answer 1](http://stackoverflow.com/questions/18737696/what-is-rake-and-how-it-is-used-in-rails) - [#Answer 2](http://www.tutorialspoint.com/ruby-on-rails/rails-and-rake.htm) 
 
 #### What is RACK
-[#Rack is basically specification of these two things: what the server should send to the app and what the app should return to the server. Thats it.](http://blog.gauravchande.com/what-is-rack-in-ruby-rails) 
+[#Rack is basically specification of these two things => what the server should send to the app and what the app should return to the server](http://blog.gauravchande.com/what-is-rack-in-ruby-rails)  
 
 
 [#Answer 1](https://www.amberbit.com/blog/2011/07/13/introduction-to-rack-middleware/) - [_2_](http://southdesign.de/blog/rack.html) - [_3_](https://www.amberbit.com/blog/2011/07/13/introduction-to-rack-middleware/) - [_4*_](https://blog.engineyard.com/2015/understanding-rack-apps-and-middleware) - [_5_](http://stackoverflow.com/questions/2256569/what-is-rack-middleware) - [_6_](http://rack.github.io/) - [_7_railscast](http://railscasts.com/episodes/151-rack-middleware?view=asciicast)
