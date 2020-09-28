@@ -179,3 +179,7 @@ obj3.test
 
 ##### ERB 2 SLIM
 * [#Answer 1](http://stackoverflow.com/questions/10347572/convert-erb-template-to-slim)
+
+https://www.javatpoint.com/ruby-interview-questions
+https://www.educba.com/ruby-interview-questions/
+https://medium.com/better-programming/53-ruby-on-rails-interview-questions-and-answers-eb99eed1aeb7
