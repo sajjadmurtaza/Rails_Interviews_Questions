@@ -22,7 +22,112 @@
 
 #### Ruby
 
-* What is the difference between a lambda, a block and a proc? [I have gotten this one at every Ruby interview I've been in]
+* What is the difference between a lambda, a block and a proc? 
+  * BLOCKS
+    * A block is a colleection of code enclosed in `do / end` statement or between bracket `{}`.
+    * ``` 
+      # single line blocks
+      [1,2,3].each { _1 } # [1, 2, 3].each { |num| puts num }
+      
+      # multi line blocks
+      [1, 2, 3].each do |num|
+        puts num
+      end
+      ```
+    * What is `yield`?
+      * it's a Ruby keyword that calls a block when you use it.
+      * WHen you use `yield` the code inside the block will run.
+      * ```
+        def fun_with_yield
+          p 'Before Yield'
+          yield
+          p 'After yield'
+        end
+        
+        fun_with_yield { p 'I am Yield' }
+        
+        # "Before Yield"
+        # "I am Yield"
+        # "After yield"
+        ```
+      * Yield can be user multiple time and with arguments as well
+      * `block_given?` check if has been passed.
+  * Procs
+    * Procs are objects, blocks are not
+    * ```
+      p = Proc.new { puts "Hello World" }
+      # #<Proc:0x00007f903bbd5998 (irb):64>
+      p.call
+
+      # Hello World
+
+      # you can pass multiple procs to methods
+
+      def multiple_procs(proc1, proc2)
+        proc1.call
+        proc2.call
+      end
+
+      a = Proc.new { puts "First proc" }
+      b = Proc.new { puts "Second proc" }
+
+      # First proc
+      # Second proc
+      ```
+   * lambda
+      * Proc and lambda both are Proc objects.
+      * ```
+        proc = Proc.new { puts "Hello world" }
+        lam = lambda { puts "Hello World" }
+
+        proc.class # returns 'Proc'
+        lam.class  # returns 'Proc'
+        ```
+      * little difference when return lambda object `#<Proc:0x00007f903b8e6ac0 (irb):60 (lambda)>`
+      * lamda check the number of arguments, while proc does not
+        ```
+        lam = lambda { |x| puts x }  
+
+        lam.call(2)                    #  2
+        lam.call                       # ArgumentError (wrong number of arguments (given 0, expected 1))
+        lam.call(1,2,3)                # ArgumentError (wrong number of arguments (given 3, expected 1))
+
+        # and in case of proc
+
+        proc = Proc.new { |x| puts x } 
+        proc.call(2)                   # 2
+        proc.call                      # nil
+        proc.call(1,2,3)               # 1
+        ```
+      * Lambdas and procs treat the ‘return’ keyword differently
+        ```
+        def proc_foo
+             p = Proc.new { return 'I will get returned by the method :o' }
+             puts "You will see me"
+             p.call
+             puts "You will not see me because the method returned :("
+        end
+
+        proc_foo
+        # You will see me
+        # => "I will get returned by the method :o" 
+
+        # and that is not true when you use lambda
+
+        def lambda_foo
+             l = lambda { return puts 'I will not get returned by the method. I will get printed by the method!' }
+             puts "You will see me"
+             l.call
+             puts "You will see me too because the method haven't returned :)"
+        end
+
+        lambda_foo
+        # You will see me
+        # I will not get returned by the method. I will get printed by the method!
+        # You will see me too because the method haven't returned :)
+        ```
+   * lambda, proc and block related ref: [ref:1](http://awaxman11.github.io/blog/2013/08/05/what-is-the-difference-between-a-block/) -- [ref:2](http://stackoverflow.com/questions/626/when-to-use-lambda-when-to-use-proc-new) -- [ref:3](http://techspry.com/ruby_and_rails/proc-and-lambda-in-ruby/) 
+   
 * How do you sort an Array of objects by a particular attribute?  What is a better way to do sorting with ActiveRecord?
 * What are some of your favorite gems?  What are their alternatives?
 * In Ruby, which is generally the better option: a recursive function or an iterative one?
@@ -56,10 +161,7 @@
 
 #####  Include and join ?  
 [include(EAGER LOADING) -- join(LAZY LOADING)](#)  
-[#Answer 1](http://tomdallimore.com/blog/includes-vs-joins-in-rails-when-and-where/) -- [#Answer 2](http://blog.bigbinary.com/2013/07/01/preload-vs-eager-load-vs-joins-vs-includes.html)  --  [#Answer 3](http://railscasts.com/episodes/181-include-vs-joins)  
-
-#####  Proc and lambda?  
-[#Answer 1](http://awaxman11.github.io/blog/2013/08/05/what-is-the-difference-between-a-block/) -- [#Answer 2 *](http://stackoverflow.com/questions/626/when-to-use-lambda-when-to-use-proc-new) -- [#Answer 3](http://techspry.com/ruby_and_rails/proc-and-lambda-in-ruby/)  
+[#Answer 1](http://tomdallimore.com/blog/includes-vs-joins-in-rails-when-and-where/) -- [#Answer 2](http://blog.bigbinary.com/2013/07/01/preload-vs-eager-load-vs-joins-vs-includes.html)  --  [#Answer 3](http://railscasts.com/episodes/181-include-vs-joins)   
 
 #####  Inheritence Questions?  
 [#Answer 1](http://stackoverflow.com/questions/9359948/multiple-inheritance-whats-a-good-example) -- [#Answer 2](http://beginnersbook.com/2013/05/java-inheritance-types/) -- [#Answer 3](http://www.dotnet-tricks.com/Tutorial/oops/JaIO211013-Understanding-Inheritance-and-Different-Types-of-Inheritance.html)
