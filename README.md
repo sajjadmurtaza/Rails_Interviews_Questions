@@ -126,15 +126,102 @@
         # I will not get returned by the method. I will get printed by the method!
         # You will see me too because the method haven't returned :)
         ```
-   * lambda, proc and block related ref: [ref:1](http://awaxman11.github.io/blog/2013/08/05/what-is-the-difference-between-a-block/) -- [ref:2](http://stackoverflow.com/questions/626/when-to-use-lambda-when-to-use-proc-new) -- [ref:3](http://techspry.com/ruby_and_rails/proc-and-lambda-in-ruby/) 
+   * lambda, proc and block related ref: [ref:1](http://awaxman11.github.io/blog/2013/08/05/what-is-the-difference-between-a-block/), [ref:2](http://stackoverflow.com/questions/626/when-to-use-lambda-when-to-use-proc-new), [ref:3](http://techspry.com/ruby_and_rails/proc-and-lambda-in-ruby/) 
 
 ---
 * **How do you sort an Array of objects by a particular attribute?  What is a better way to do sorting with ActiveRecord?**
-* What are some of your favorite gems?  What are their alternatives?
-* In Ruby, which is generally the better option: a recursive function or an iterative one?
-* What are `#method_missing` and `#send`?  Why are they useful?
-* What are the various Ruby runtimes, and how are they different?
-* Define "Matz".
+ ```
+ # ruby sort by
+ fruits = ["banana", "apple", "orange", "grapers"]
+ 
+ fruits.sort! { |a, b|  a <=> b }
+ # => ["apple", "banana", "grapers", "orange"]
+
+ fruits.sort! { |a, b|  a.length <=> b.length }
+ # => ["apple", "banana", "orange", "grapers"]
+
+ User.all.sort_by { |u| u.name }
+ 
+ User.all.sort_by &:name
+ 
+ # in rails
+ User.order(:name)
+ ```
+ [ref:1 <=>](https://www.youtube.com/watch?v=f4NItw7r33E), [ref: 2](https://medium.com/@albert.s.chun/ruby-the-spaceship-operator-101-717b42566971)
+ 
+---
+* **What are some of your favorite gems?  What are their alternatives?** [Ref: Ruby awesome gems](https://github.com/markets/awesome-ruby)
+
+---
+* **In Ruby, which is generally the better option: a recursive function or an iterative one?**
+```
+def iterative_factorial(n)
+  (1..n).inject(:*)      # same (1..n).inject{ |sum, number| sum * number }
+end
+
+def recursive_factorial(n)
+  return 1 if n <= 1
+
+  n * recursive_factorial(n-1)
+end
+```
+
+[ref: 1](https://www.rubyguides.com/2015/08/ruby-recursion-and-memoization/)
+
+---
+* **What are `#method_missing` and `#send`?  Why are they useful?**
+
+method_missing is a method that ruby gives you access inside of your objects 
+to handle situations when calling method that doesn't exist. 
+It's sort of like a Begin/Rescue, but for method calls. 
+It gives you one last chance to deal with that method call before an exception is raised.
+
+```
+class Cow
+ def walk
+  p "Let's walk"
+ end
+end
+
+# c = Cow.new
+# c.walk     # "Let's walk"
+# c.fly      # NoMethodError (becasue cow can't fly :D)
+```
+Now instead of the NoMethodError exception, we make it clear to anyone that cows do not fly with the message.
+```
+class Cow
+ def walk
+  p "Let's walk"
+ end
+ 
+ def method_missing(m, *args, &block)
+  return p "Sorry! Cow can't fly! She is very heavy :D" if m.to_s == 'fly'
+  
+  super
+ end
+end
+
+# c = Cow.new
+# c.walk     # "Let's walk"
+# c.fly      # Sorry! Cow can't fly! She is very heavy :D
+```
+and send is a ruby method allowing to invoke another method by name.
+```
+ class Klass
+     def hello(*args)
+       "Hello"
+     end
+   end
+   
+   k = Klass.new
+   k.send :hello     # => "Hello"
+```
+Note: `Klass.instance_methods(false)` will return all instance methods lists.
+
+[ref: method_missing](https://www.leighhalliday.com/ruby-metaprogramming-method-missing), [ref: att_accessor...](https://stackoverflow.com/questions/20018784/attr-accessor-vs-attr-reader-instance-variables)
+
+---
+* **What are the various Ruby runtimes, and how are they different?**[ref](https://www.rrtutors.com/site/answer/What-are-the-various-Ruby-runtimes#)
 
 #### Rails
 
