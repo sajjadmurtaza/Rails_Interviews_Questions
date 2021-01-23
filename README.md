@@ -21,8 +21,8 @@
 * Explain how ajax works, hitting all parts of the stack.
 
 #### Ruby
-
-* What is the difference between a lambda, a block and a proc? 
+---
+* **What is the difference between a lambda, a block and a proc?**
   * BLOCKS
     * A block is a colleection of code enclosed in `do / end` statement or between bracket `{}`.
     * ``` 
@@ -127,8 +127,9 @@
         # You will see me too because the method haven't returned :)
         ```
    * lambda, proc and block related ref: [ref:1](http://awaxman11.github.io/blog/2013/08/05/what-is-the-difference-between-a-block/) -- [ref:2](http://stackoverflow.com/questions/626/when-to-use-lambda-when-to-use-proc-new) -- [ref:3](http://techspry.com/ruby_and_rails/proc-and-lambda-in-ruby/) 
-   
-* How do you sort an Array of objects by a particular attribute?  What is a better way to do sorting with ActiveRecord?
+
+---
+* **How do you sort an Array of objects by a particular attribute?  What is a better way to do sorting with ActiveRecord?**
 * What are some of your favorite gems?  What are their alternatives?
 * In Ruby, which is generally the better option: a recursive function or an iterative one?
 * What are `#method_missing` and `#send`?  Why are they useful?
