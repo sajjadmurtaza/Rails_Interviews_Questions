@@ -221,6 +221,45 @@ Note: `Klass.instance_methods(false)` will return all instance methods lists.
 [ref: method_missing](https://www.leighhalliday.com/ruby-metaprogramming-method-missing), [ref: att_accessor...](https://stackoverflow.com/questions/20018784/attr-accessor-vs-attr-reader-instance-variables)
 
 ---
+* **What is the difference between a string and a symbol?**
+  * "string"
+    * text between quotation marks "" i.e. "I am strring"
+    * Strings are mutable.
+    * if you repeat the assignment then object in memory location will change.
+     ```
+     irb(main):254:0> "foo".object_id
+     # => 21540
+     
+     irb(main):255:0> "foo".object_id
+     # => 21560
+     
+     irb(main):256:0> "foo".object_id
+     => 21580
+
+     ```
+  * :symbol
+    * symbol begins with ccolon : i.e. :symbol
+    * symbols are immutable
+      * immutable objects that can't be changed
+      * object_id remains same (one object per symbol)
+     ```
+      # :foo will have same object
+      
+      irb(main):251:0> :foo.object_id
+      # => 11652508
+      
+      irb(main):252:0> :foo.object_id
+      # => 11652508
+      
+      irb(main):253:0> :foo.object_id
+      # => 11652508
+
+     ```
+      
+Note: String are about 1.7 times slower than symbols!
+[ref](https://www.rubyguides.com/2018/02/ruby-symbols/)
+
+---
 * **What are the various Ruby runtimes, and how are they different?**[ref](https://www.rrtutors.com/site/answer/What-are-the-various-Ruby-runtimes#)
 
 #### Rails
